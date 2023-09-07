@@ -146,6 +146,11 @@ nav
                     font-size: 20px;
                     border-style: none;
                     color: white;
+                    &:hover
+                    {
+                        background-color: #9100de;
+                        background-image: linear-gradient(110deg, #9100de 0%, #FC00FF 100%);
+                    }
                 }
             }
         }

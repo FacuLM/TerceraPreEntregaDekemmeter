@@ -121,6 +121,10 @@ nav .nav-item .dropdown-menu {
   border-style: none;
   color: white;
 }
+.bodyContactos .main-contacto .articleContactos .articleForm .input-submit:hover {
+  background-color: #9100de;
+  background-image: linear-gradient(110deg, #9100de 0%, #FC00FF 100%);
+}
 @media screen and (min-width: 320px) and (max-width: 480px) {
   .bodyContactos .main-contacto .contactanos {
     font-size: 30px;
