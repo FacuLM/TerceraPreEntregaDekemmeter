@@ -354,7 +354,7 @@ nav .nav-item .dropdown-menu {
   text-align: center;
 }
 
-@media screen and (min-width: 320px) and (max-width: 480px) {
+@media screen and (min-width: 320px) and (max-width: 500px) {
   .bodyIndex .divH1 .titulo {
     font-size: 15px;
   }
@@ -398,6 +398,9 @@ nav .nav-item .dropdown-menu {
   }
   .main-financiamiento .section-financiamiento #divBotonConsulta .boton-consulta {
     width: 50%;
+  }
+  .main-financiamiento .section-financiamiento .container-fluid {
+    padding: 0;
   }
   .footerDiv .footerFooter {
     display: flex;
