@@ -1,0 +1,419 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5;
+}
+
+nav {
+  background-color: rgb(150, 2, 0);
+}
+nav .navbar-brand {
+  text-shadow: 0 0 50px rgb(179, 0, 27);
+  font-family: "Bebas Neue", sans-serif, bold;
+  color: white;
+}
+nav .nav-item .nav-link, nav .nav-item .dropdown-menu .dropdown-item {
+  font-family: "Bebas Neue", sans-serif, bold;
+  color: white;
+  font-size: 30px;
+}
+nav .nav-item .nav-link:hover, nav .nav-item .dropdown-menu .dropdown-item:hover {
+  text-shadow: 0 0 50px rgb(179, 0, 27);
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+  box-shadow: 10px 5px 25px rgba(217, 219, 241, 0.5);
+}
+nav .nav-item .dropdown-menu {
+  background-color: rgb(150, 2, 0);
+}
+
+.bodyIndex {
+  background-color: #E6DBD0;
+}
+.bodyIndex .bodyP {
+  font-family: "Oswald", sans-serif;
+  text-align: center;
+  background-color: rgb(52, 0, 104);
+  color: white;
+  margin: 0;
+}
+.bodyIndex .divH1 .titulo {
+  font-family: "Roboto", sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  color: black;
+  padding: 0.3rem;
+  background-color: grey;
+  border-bottom: 3px solid black;
+}
+.bodyIndex .text-center img {
+  width: 40%;
+  padding: 5px;
+  margin: 10px 10px;
+  border: 2px inset black;
+  border-radius: 5px;
+}
+
+.bodyContactos {
+  background-color: #393E41;
+}
+.bodyContactos .bodyP {
+  font-family: "Oswald", sans-serif;
+  text-align: center;
+  background-color: rgb(52, 0, 104);
+  color: white;
+  margin: 0;
+}
+.bodyContactos .main-contacto .contactanos {
+  background-image: url(https://www.encontracarros.com.br/upload/volkswagen/novo-polo-2023-02.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 500px;
+  height: 500px;
+  font-size: 60px;
+  padding-left: 20px;
+  font-weight: bold;
+}
+.bodyContactos .main-contacto .articleContactos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.bodyContactos .main-contacto .articleContactos .divArticleH1 p {
+  font-size: 25px;
+}
+.bodyContactos .main-contacto .articleContactos .articleForm {
+  width: 50%;
+  height: 100%;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px 10px white;
+}
+.bodyContactos .main-contacto .articleContactos .articleForm .articleFormDiv {
+  margin-top: 2em;
+  display: grid;
+  gap: 2em;
+}
+.bodyContactos .main-contacto .articleContactos .articleForm .articleFormDiv .formDiv-div .div-input {
+  width: 100%;
+  background: none;
+  font-size: 1rem;
+  padding: 0.6em 0.3em;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+}
+.bodyContactos .main-contacto .articleContactos .articleForm .articleFormDiv .formDiv-div .div-label {
+  opacity: 50%;
+}
+.bodyContactos .main-contacto .articleContactos .articleForm .input-submit {
+  margin: 10px;
+  width: 15%;
+  background-color: purple;
+  border-radius: 5px;
+  font-size: 20px;
+  border-style: none;
+  color: white;
+}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .bodyContactos .main-contacto .contactanos {
+    font-size: 30px;
+    height: 200px;
+    background-size: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .bodyContactos .main-contacto .articleContactos .divArticleH1 p {
+    font-size: 15px;
+  }
+  .bodyContactos .main-contacto .articleContactos .articleForm {
+    height: 100%;
+    width: 100%;
+  }
+  .bodyContactos .main-contacto .articleContactos .articleForm .articleFormDiv .formDiv-div {
+    font-size: 15px;
+  }
+  .bodyContactos .main-contacto .articleContactos .articleForm .articleFormDiv .form-check {
+    font-size: 10px;
+  }
+  .bodyContactos .main-contacto .articleContactos .articleForm .input-submit {
+    width: 50%;
+    font-size: 1rem;
+  }
+  .bodyContactos .sectionContactos {
+    width: 100%;
+  }
+  .bodyContactos .sectionContactos .icono {
+    margin-top: 10px;
+    text-align: center;
+  }
+  .bodyContactos .sectionContactos .icono img {
+    font-size: 10px;
+    margin: 0;
+  }
+  .bodyContactos .sectionContactos .icono p {
+    font-size: 15px;
+    width: auto;
+  }
+}
+
+.sectionContactos {
+  width: 15%;
+}
+.sectionContactos .icono img {
+  margin-left: 60px;
+  width: 80px;
+  background-color: white;
+  border-radius: 50px;
+}
+.sectionContactos .icono p {
+  border-radius: 8px;
+  font-weight: bold;
+  background-color: red;
+  padding: 10px;
+}
+
+.bodyFinanciamiento {
+  background-color: #E6DBD0;
+}
+.bodyFinanciamiento .bodyP {
+  font-family: "Oswald", sans-serif;
+  text-align: center;
+  background-color: rgb(52, 0, 104);
+  color: white;
+  margin: 0;
+}
+.bodyFinanciamiento .article-financiamiento {
+  font-family: "Oswald", sans-serif;
+}
+.bodyFinanciamiento .article-financiamiento .articleFinanciamientoDiv {
+  background-image: url("https://markepymes.com/wp-content/uploads/2021/04/tips-de-marketing-para-el-sector-del-alquiler-de-vehiculos-y-furgonetas.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 400px;
+  height: 400px;
+  width: 100%;
+}
+.bodyFinanciamiento .article-financiamiento .auto {
+  font-family: "Roboto", sans-serif;
+}
+.bodyFinanciamiento .article-financiamiento .auto .autoDivH2 .TextoFinanciamiento {
+  background-color: black;
+  color: gold;
+  font-weight: bold;
+  font-size: 40px;
+}
+.bodyFinanciamiento .article-financiamiento .auto .chevfin {
+  width: 100%;
+  height: 68.2%;
+}
+.bodyFinanciamiento .article-financiamiento .auto .divChev {
+  margin-top: 5px;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: rgb(15, 8, 75);
+  color: white;
+}
+.bodyFinanciamiento .article-financiamiento .auto .divChev p {
+  font-size: 15px;
+  text-align: center;
+}
+.bodyFinanciamiento .article-financiamiento .auto .divChev .divP {
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  font-size: 30px;
+}
+.bodyFinanciamiento .section-financiamiento {
+  background-color: #393E41;
+}
+.bodyFinanciamiento .section-financiamiento .parrafoF {
+  font-size: 25px;
+  text-align: center;
+}
+.bodyFinanciamiento .section-financiamiento .section-financiamiento-div {
+  background-color: #EAEAEA;
+  border: 1px solid #EAEAEA;
+  border-radius: 5px;
+  margin: 10px;
+  height: 200px;
+  align-items: center;
+  text-align: center;
+}
+.bodyFinanciamiento .section-financiamiento .section-financiamiento-div .numeros {
+  font-size: 50px;
+  padding-left: 5px;
+}
+.bodyFinanciamiento .section-financiamiento .texto {
+  font-family: "REM", sans-serif;
+  margin: 10px;
+}
+.bodyFinanciamiento .section-financiamiento .div-del-medio {
+  background-color: #EAEAEA;
+  border: 1px solid #EAEAEA;
+  border-radius: 5px;
+  margin: 0;
+}
+.bodyFinanciamiento .section-financiamiento .div-del-medio .numeroMedio {
+  padding-top: 5px;
+  font-size: 1.5rem;
+}
+.bodyFinanciamiento .section-financiamiento #divBotonConsulta {
+  margin: 5px;
+  font-size: 30px;
+  text-align: center;
+}
+.bodyFinanciamiento .section-financiamiento .boton-consulta {
+  width: 25%;
+  padding: 15px 30px;
+  border: none;
+  background-color: purple;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+.bodyFinanciamiento .section-financiamiento .boton-consulta:hover {
+  background-color: #9100de;
+  background-image: linear-gradient(110deg, #9100de 0%, #FC00FF 100%);
+}
+
+.bodyChevrolet .bodyP {
+  font-family: "Oswald", sans-serif;
+  text-align: center;
+  background-color: rgb(52, 0, 104);
+  color: white;
+  margin: 0;
+}
+.bodyChevrolet .mainChevrolet .modelosChevrolet {
+  text-align: center;
+  color: #FFD449;
+  font-family: "Bebas Neue";
+  font-size: 4rem;
+  text-shadow: 0 0 30px #FFC43D;
+  background-color: black;
+}
+.bodyChevrolet .mainChevrolet .article-modelos .row {
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+.bodyChevrolet .mainChevrolet .article-modelos .row .col-6 {
+  width: 40%;
+  margin: 5px 10px;
+  padding: 0;
+}
+.bodyChevrolet .mainChevrolet .article-modelos .row .tx {
+  padding: 0;
+  margin: 5px;
+  border: 1px;
+  border-radius: 8px;
+  box-shadow: 0 10px 25px rgba(92, 99, 105, 0.2);
+}
+.bodyChevrolet .mainChevrolet .article-modelos .row .tx .tx h2 {
+  margin-top: 10px;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.footerDiv {
+  font-family: "Oswald", sans-serif;
+  margin: 0;
+  background-color: rgb(172, 176, 189);
+  font-size: 20px;
+}
+.footerDiv .footerFooter {
+  display: grid;
+  grid-template-columns: 1fr 9fr;
+  grid-template-rows: 100px;
+  grid-template-areas: "colauno colados";
+  align-items: center;
+}
+.footerDiv .footerFooter .footerImg {
+  grid-area: colauno;
+  width: 70%;
+  margin-top: 20px;
+}
+.footerDiv .footerFooter .footerDiv .footerDiv p {
+  grid-area: colados;
+  padding: 10px;
+  margin-top: 10px;
+}
+.footerDiv .footerP {
+  margin: 0;
+  text-align: center;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .bodyIndex .divH1 .titulo {
+    font-size: 15px;
+  }
+  .bodyIndex .text-center img {
+    width: 80%;
+  }
+  .main-financiamiento .article-financiamiento {
+    font-weight: bold;
+  }
+  .main-financiamiento .article-financiamiento .articleFinanciamiento .articleFinanciamientoDiv {
+    height: 200px;
+    background-size: 100%;
+  }
+  .main-financiamiento .article-financiamiento .articleFinanciamiento .articleFinanciamientoDiv p {
+    font-size: 10px;
+  }
+  .main-financiamiento .article-financiamiento .auto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .main-financiamiento .article-financiamiento .auto .autoDivH2 .TextoFinanciamiento {
+    font-size: 20px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .main-financiamiento .article-financiamiento .auto .divAuto {
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .main-financiamiento .article-financiamiento .auto .divAuto p {
+    margin: 0;
+    padding: 0;
+    font-weight: none;
+  }
+  .main-financiamiento .section-financiamiento .parrafoF {
+    font-size: 15px;
+    text-align: center;
+  }
+  .main-financiamiento .section-financiamiento #divBotonConsulta .boton-consulta {
+    width: 50%;
+  }
+  .footerDiv .footerFooter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footerDiv .footerFooter .footerImg {
+    width: 70px;
+  }
+  .footerDiv .footerFooter .footerDivL {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .footerDiv .footerFooter .footerDivL p {
+    font-size: 20px;
+  }
+  .footerDiv .footerP {
+    font-size: 20px;
+  }
+}
+
+/*# sourceMappingURL=cssConSass.css.map */

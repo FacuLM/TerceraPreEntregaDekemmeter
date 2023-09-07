@@ -1,0 +1,563 @@
+@use "variables";
+*
+{
+    margin: 0;
+    padding: 0;
+}
+html
+{
+    font-size: 62.5;
+}
+// Navbar
+nav
+{ 
+    background-color: rgb(150, 2, 0);
+        .navbar-brand
+        {
+            text-shadow: variables.$sombra;
+            font-family: variables.$fuenteTitulo;
+            color:white;
+        }
+        .nav-item
+        { 
+            .nav-link, .dropdown-menu .dropdown-item
+            {
+                font-family: variables.$fuenteTitulo;
+                color: white;
+                font-size: variables.$sizeL;
+                &:hover
+                {
+                    text-shadow: variables.$sombra;
+                    background-color: white;
+                    color: black;
+                    border-radius: 10px;
+                    box-shadow: 10px 5px 25px rgba(217, 219, 241, .5);
+                }
+            }
+            .dropdown-menu
+            {
+                background-color: rgb(150, 2, 0) ;
+            }
+        }
+}
+// Index
+.bodyIndex
+{
+    background-color: #E6DBD0;
+    .bodyP
+    {
+        @include variables.aceleraTuFuturo;
+    }
+    // index
+    .divH1
+    {
+        .titulo
+        {
+            font-family: variables.$fuenteParrafos;
+            font-size: 25px;
+            font-weight: bold;
+            color: black;
+            padding: 0.3rem;
+            background-color: grey;
+            border-bottom: 3px solid black;
+        }
+    }
+    .text-center img
+    {
+        width: 40%;
+        padding: 5px;
+        margin: 10px 10px;
+        border: 2px inset black;
+        border-radius: 5px;
+    }
+}
+// Contactos
+.bodyContactos
+{
+    background-color:#393E41;
+    .bodyP
+    {
+        @include variables.aceleraTuFuturo;
+    }
+    .main-contacto
+    { 
+    .contactanos
+            {
+            background-image: url(https://www.encontracarros.com.br/upload/volkswagen/novo-polo-2023-02.jpg);
+            background-repeat: no-repeat;
+            background-size: 100% 500px ;
+            height: 500px;
+            font-size: 60px;
+            padding-left: 20px;
+            font-weight: bold;
+            }
+        .articleContactos
+        {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .divArticleH1
+            {
+                p
+                {
+                    font-size: 25px;
+                }
+            }
+            .articleForm
+            {
+                width: 50%;
+                height: 100%;
+                border-radius: 8px;
+                box-shadow: variables.$sombraBlanca;
+                .articleFormDiv
+                {
+                    margin-top: 2em;
+                    display: grid;
+                    gap: 2.0em;
+                    .formDiv-div
+                    {
+                        .div-input
+                        {
+                            width: 100%;
+                            background: none;
+                            font-size: 1rem;
+                            padding: .6em .3em;
+                            border: none;
+                            outline: none;
+                            border-bottom: 1px solid black;
+                            border-right: 1px solid black;
+                            cursor: pointer;
+                            font-family: variables.$fuenteParrafos;
+                            
+                        }
+                        .div-label
+                        {
+                            opacity: 50%;
+                        }
+                    }
+                }
+                .input-submit
+                {  
+                    margin: 10px;
+                    width: 15%;
+                    background-color: purple;
+                    border-radius: 5px;
+                    font-size: 20px;
+                    border-style: none;
+                    color: white;
+                }
+            }
+        }
+    }
+    @media screen and (min-width: 320px) and (max-width:480px)
+    {
+    // Contactos
+    .main-contacto
+    {
+        .contactanos
+        {
+            font-size: 30px;
+            height: 200px;
+            background-size: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        .articleContactos
+        {
+            .divArticleH1
+            {
+                p
+                {
+                    font-size: 15px;
+                }
+            }
+            .articleForm
+            {
+                @include variables.alturaAncho;
+                .articleFormDiv 
+                {                    
+                    .formDiv-div
+                    {
+                    font-size: 15px;
+                    }
+                    .form-check
+                    {
+                    font-size: 10px;
+                    }
+                }
+                    .input-submit
+                    {
+
+                        width: 50%;
+                        font-size: 1rem;
+                    }
+            }
+        }
+    }
+    .sectionContactos
+    { 
+        width: 100%;
+        .icono 
+        { 
+            margin-top: 10px;
+            text-align: center;
+            img
+            {
+                font-size: 10px;
+                margin: 0;
+            }
+            p
+            {
+                font-size: 15px;
+                width: auto;
+            }
+        }
+    }
+    }
+}
+.sectionContactos
+{
+    width: 15%;
+    .icono
+    {
+        img 
+        {
+            margin-left: 60px;
+            width: 80px;
+            background-color: white;
+            border-radius: 50px;
+        }
+        p
+        {
+            border-radius: 8px;
+            font-weight: bold;
+            background-color: red;
+            padding: 10px;
+        }
+    }
+            
+}
+// Financiamiento
+.bodyFinanciamiento
+{
+    background-color: #E6DBD0;
+    .bodyP
+    {
+        @include variables.aceleraTuFuturo;
+    }
+    .article-financiamiento
+    {
+        font-family: variables.$fuenteDos;
+        .articleFinanciamientoDiv
+        {
+            background-image: url("https://markepymes.com/wp-content/uploads/2021/04/tips-de-marketing-para-el-sector-del-alquiler-de-vehiculos-y-furgonetas.jpg");
+            background-repeat: no-repeat;
+            background-size: 100% 400px ;
+            height: 400px;
+            width: 100%;
+        }  
+        .auto
+        {
+            font-family: variables.$fuenteParrafos;
+            .autoDivH2
+            {
+                .TextoFinanciamiento
+                {
+                    background-color: black;
+                    color: gold;
+                    font-weight: bold;
+                    font-size: 40px;
+                }
+            }
+            .chevfin
+            {
+                width: 100%;
+                height: 68.2%;
+            }
+            .divChev
+            {
+                margin-top: 5px;
+                border: 1px solid black;
+                border-radius: 10px;
+                background-color: rgb(15, 8, 75);
+                color: white;
+                p
+                {
+                    font-size: 15px;
+                    text-align: center;
+                }
+                .divP
+                {
+                    text-align: center;
+                    font-family: variables.$fuenteDos;
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+    .section-financiamiento
+    {
+        background-color:#393E41;
+        .parrafoF
+        {
+            font-size: 25px;
+            text-align: center
+        }
+        .section-financiamiento-div
+        {
+            @include variables.financiamiento;
+            margin: 10px;
+            height: 200px;
+            align-items: center;
+            text-align: center;
+            .numeros
+            {
+                font-size: 50px;
+                padding-left: 5px;
+            }
+        }
+        .texto
+        {
+            font-family: 'REM', sans-serif;
+            margin: 10px;
+        }
+        .div-del-medio
+        {
+            @include variables.financiamiento;
+            margin: 0;
+            .numeroMedio
+            {
+                padding-top: 5px;
+                font-size: 1.5rem;
+            }
+        }
+        #divBotonConsulta
+        {
+            margin: 5px;
+            font-size: 30px;
+            text-align: center;
+        }
+        .boton-consulta
+        {
+            width: 25%;
+            padding: 15px 30px;
+            border: none;
+            background-color: purple;
+            color: white;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 14px;
+            &:hover
+            {
+                background-color: #9100de;
+                background-image: linear-gradient(110deg, #9100de 0%, #FC00FF 100%);
+            }
+
+        }
+    }
+}
+// Chevrolet
+.bodyChevrolet
+{
+    .bodyP
+    {
+        @include variables.aceleraTuFuturo;
+    }
+    .mainChevrolet
+    {
+        .modelosChevrolet
+            {
+                text-align: center;
+                color: #FFD449;
+                font-family: 'Bebas Neue';
+                font-size: 4rem;
+                text-shadow: 0 0 30px #FFC43D;
+                background-color: black;
+            }
+        .article-modelos
+        {
+            .row
+            {
+                @include variables.alturaAncho;
+                justify-content: center;
+                align-items: center;
+                margin: 0;
+                padding: 0;
+                .col-6
+                {
+                    width: 40%;
+
+                    margin: 5px 10px;
+                    padding: 0;
+                    
+                }
+                .tx
+                {   
+                    
+                    padding: 0;
+                    margin: 5px;
+                    border: 1px;
+                    border-radius: 8px;
+                    box-shadow: 0 10px 25px rgba(92, 99, 105, .2);
+                    .tx h2
+                        {
+                            margin-top: 10px;
+                            font-family: 'Bebas Neue', sans-serif;
+                        }
+                }
+            }
+        }
+    }
+}
+// Footer
+.footerDiv
+{
+    font-family: variables.$fuenteDos;
+    margin: 0;
+    background-color: rgb(172, 176, 189);
+    font-size: 20px;
+    .footerFooter
+    {
+        display: grid;
+        grid-template-columns: 1fr 9fr;
+        grid-template-rows: 100px;
+        grid-template-areas: 
+        "colauno colados";
+        align-items: center;
+        .footerImg
+        {
+            grid-area: colauno;
+            width: 70%;
+            margin-top: 20px;
+            }
+            .footerDiv 
+            {
+            .footerDiv p 
+            {
+                grid-area: colados;
+                padding: 10px;
+                margin-top: 10px;
+            }
+        }
+    }
+    .footerP
+    {
+        margin: 0;
+        text-align: center;
+    }
+}
+@media screen and (min-width: 320px) and (max-width:480px ) 
+{
+    // Index
+    .bodyIndex
+    {
+        .divH1
+        {
+            .titulo
+            {
+                font-size: 15px;
+            }
+        }
+        .text-center img
+        {
+            width: 80%;
+        }
+    }
+    // Chevrolet
+
+    // Financiamiento
+    .main-financiamiento
+    {
+        .article-financiamiento
+        {
+            font-weight: bold;
+            .articleFinanciamiento
+            {
+                .articleFinanciamientoDiv
+                {
+                    height: 200px;
+                    background-size: 100%;
+                    
+                    p
+                    {
+                        font-size: 10px;
+                    }
+                }
+            }
+            .auto
+            {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .autoDivH2
+                {
+                    .TextoFinanciamiento
+                    {
+                        font-size: 20px;
+                        width: 100%;
+                        margin: 0;
+                        padding: 0;
+                    }
+                    }
+                    .divAuto
+                    {
+                        width: 100%;
+                        margin-top: 5px;
+                        margin-bottom: 5px;
+                        p
+                        {
+                            margin: 0;
+                            padding: 0;
+                            font-weight: none;
+                        }
+                    }
+                }
+        }
+        .section-financiamiento
+        {
+            .parrafoF
+            {
+                font-size: 15px;
+                text-align: center;
+            }
+            #divBotonConsulta
+            {
+                .boton-consulta
+                {
+                    width: 50%;
+                }
+            }
+            
+        }
+    }
+    // Footer
+    .footerDiv
+    {
+        .footerFooter
+        {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        
+        .footerImg
+        {
+            width: 70px ;
+        }
+        .footerDivL
+        {
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+        p
+        {
+            font-size: 20px;
+        }
+        }
+        }
+        .footerP
+        {
+            font-size: 20px;
+        }
+    }
+}

@@ -1,0 +1,22 @@
+$fuenteTitulo:'Bebas Neue', sans-serif, bold;
+$fuenteDos:'Oswald', sans-serif;
+$fuenteParrafos:'Roboto', sans-serif;
+$sombra: 0 0 50px rgb(179, 0, 27);
+$sombraBlanca: 0px 0px 10px 10px white;
+$sizeL: 30px;
+@mixin alturaAncho {
+    height: 100%;
+    width: 100%;
+}
+@mixin aceleraTuFuturo{
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    background-color: rgb(52, 0, 104);
+    color: white;
+    margin: 0;
+}
+@mixin financiamiento{
+    background-color: #EAEAEA;
+    border: 1px solid #EAEAEA;
+    border-radius: 5px;
+}
