@@ -113,13 +113,13 @@ nav .nav-item .dropdown-menu {
   opacity: 50%;
 }
 .bodyContactos .main-contacto .articleContactos .articleForm .input-submit {
-  margin: 10px;
-  width: 15%;
+  width: 25%;
+  padding: 10px 5px;
+  border: none;
   background-color: purple;
-  border-radius: 5px;
-  font-size: 20px;
-  border-style: none;
   color: white;
+  border-radius: 6px;
+  font-size: 16px;
 }
 .bodyContactos .main-contacto .articleContactos .articleForm .input-submit:hover {
   background-color: #9100de;
@@ -273,13 +273,12 @@ nav .nav-item .dropdown-menu {
 }
 .bodyFinanciamiento .section-financiamiento .boton-consulta {
   width: 25%;
-  padding: 15px 30px;
+  padding: 10px 5px;
   border: none;
   background-color: purple;
   color: white;
   border-radius: 6px;
-  cursor: pointer;
-  font-size: 14px;
+  font-size: 16px;
 }
 .bodyFinanciamiento .section-financiamiento .boton-consulta:hover {
   background-color: #9100de;
@@ -297,15 +296,32 @@ nav .nav-item .dropdown-menu {
   text-align: center;
   color: #FFD449;
   font-family: "Bebas Neue";
-  font-size: 4rem;
+  font-size: 5rem;
   text-shadow: 0 0 30px #FFC43D;
   background-color: black;
+  animation-name: Titulo;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-delay: 0s;
+}
+@keyframes Titulo {
+  0% {
+    color: #FFD449;
+  }
+  25% {
+    color: white;
+  }
+  50% {
+    color: white;
+  }
+  100% {
+    color: #FFD449;
+  }
 }
 .bodyChevrolet .mainChevrolet .article-modelos .row {
   height: 100%;
   width: 100%;
   justify-content: center;
-  align-items: center;
   margin: 0;
   padding: 0;
 }
@@ -321,9 +337,18 @@ nav .nav-item .dropdown-menu {
   border-radius: 8px;
   box-shadow: 0 10px 25px rgba(92, 99, 105, 0.2);
 }
-.bodyChevrolet .mainChevrolet .article-modelos .row .tx .tx h2 {
-  margin-top: 10px;
-  font-family: "Bebas Neue", sans-serif;
+.bodyChevrolet .mainChevrolet .article-modelos .row .tx .divTx .input-boton-autos {
+  width: 25%;
+  padding: 10px 5px;
+  border: none;
+  background-color: purple;
+  color: white;
+  border-radius: 6px;
+  font-size: 16px;
+}
+.bodyChevrolet .mainChevrolet .article-modelos .row .tx .divTx .input-boton-autos:hover {
+  background-color: #9100de;
+  background-image: linear-gradient(110deg, #9100de 0%, #FC00FF 100%);
 }
 
 .footerDiv {
@@ -360,6 +385,27 @@ nav .nav-item .dropdown-menu {
   }
   .bodyIndex .text-center img {
     width: 80%;
+  }
+  .bodyChevrolet .mainChevrolet .modelosChevrolet {
+    font-size: 50px;
+  }
+  .bodyChevrolet .mainChevrolet .article-modelos .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .bodyChevrolet .mainChevrolet .article-modelos .row .col-6, .bodyChevrolet .mainChevrolet .article-modelos .row .tx {
+    width: 80%;
+    margin: 10px;
+  }
+  .bodyChevrolet .mainChevrolet .article-modelos .row .tx .divTx {
+    justify-content: space-evenly;
+    height: 300px;
+  }
+  .bodyChevrolet .mainChevrolet .article-modelos .row .tx .divTx .input-boton-autos {
+    font-size: 12px;
+    width: 50%;
   }
   .main-financiamiento .article-financiamiento {
     font-weight: bold;
@@ -401,6 +447,9 @@ nav .nav-item .dropdown-menu {
   }
   .main-financiamiento .section-financiamiento .container-fluid {
     padding: 0;
+  }
+  .mainChevrolet .modelosChevrolet {
+    font-size: 20px;
   }
   .footerDiv .footerFooter {
     display: flex;

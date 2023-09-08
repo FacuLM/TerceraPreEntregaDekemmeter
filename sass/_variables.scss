@@ -20,3 +20,17 @@ $sizeL: 30px;
     border: 1px solid #EAEAEA;
     border-radius: 5px;
 }
+@mixin boton{
+    width: 25%;
+    padding: 10px 5px;
+    border: none;
+    background-color: purple;
+    color: white;
+    border-radius: 6px;
+    font-size: 16px;
+        &:hover
+        {
+            background-color: #9100de;
+            background-image: linear-gradient(110deg, #9100de 0%, #FC00FF 100%);
+        }
+}

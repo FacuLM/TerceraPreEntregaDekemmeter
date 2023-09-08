@@ -139,18 +139,7 @@ nav
                 }
                 .input-submit
                 {  
-                    margin: 10px;
-                    width: 15%;
-                    background-color: purple;
-                    border-radius: 5px;
-                    font-size: 20px;
-                    border-style: none;
-                    color: white;
-                    &:hover
-                    {
-                        background-color: #9100de;
-                        background-image: linear-gradient(110deg, #9100de 0%, #FC00FF 100%);
-                    }
+                    @include variables.boton;
                 }
             }
         }
@@ -345,20 +334,7 @@ nav
         }
         .boton-consulta
         {
-            width: 25%;
-            padding: 15px 30px;
-            border: none;
-            background-color: purple;
-            color: white;
-            border-radius: 6px;
-            cursor: pointer;
-            font-size: 14px;
-            &:hover
-            {
-                background-color: #9100de;
-                background-image: linear-gradient(110deg, #9100de 0%, #FC00FF 100%);
-            }
-
+            @include variables.boton;
         }
     }
 }
@@ -376,9 +352,27 @@ nav
                 text-align: center;
                 color: #FFD449;
                 font-family: 'Bebas Neue';
-                font-size: 4rem;
+                font-size: 5rem;
                 text-shadow: 0 0 30px #FFC43D;
                 background-color: black;
+                animation-name: Titulo;
+                animation-duration: 2s;
+                animation-iteration-count: infinite;
+                animation-delay: 0s;
+            }
+            @keyframes Titulo{
+                0%{
+                    color: #FFD449;
+                }
+                25%{
+                    color: white;
+                }
+                50%{
+                    color: white;
+                }
+                100%{
+                    color: #FFD449;
+                }
             }
         .article-modelos
         {
@@ -386,7 +380,6 @@ nav
             {
                 @include variables.alturaAncho;
                 justify-content: center;
-                align-items: center;
                 margin: 0;
                 padding: 0;
                 .col-6
@@ -402,11 +395,13 @@ nav
                     border: 1px;
                     border-radius: 8px;
                     box-shadow: 0 10px 25px rgba(92, 99, 105, .2);
-                    .tx h2
+                    .divTx
+                    {
+                        .input-boton-autos
                         {
-                            margin-top: 10px;
-                            font-family: 'Bebas Neue', sans-serif;
+                            @include variables.boton;
                         }
+                    }
                 }
             }
         }
@@ -467,7 +462,45 @@ nav
         }
     }
     // Chevrolet
-
+    .bodyChevrolet
+    {
+        .mainChevrolet
+        {
+            .modelosChevrolet
+            {
+                font-size: 50px;
+            }
+            .article-modelos
+            {
+                .row
+                {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    width: 100%;
+                    .col-6, .tx
+                    {
+                        width: 80%;
+                        margin: 10px;
+                        
+                    }
+                    .tx
+                    {
+                        .divTx
+                        {
+                            justify-content: space-evenly;
+                            height: 300px;
+                            .input-boton-autos
+                            {
+                                font-size: 12px;
+                                width: 50%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
     // Financiamiento
     .main-financiamiento
     {
@@ -542,7 +575,7 @@ nav
     {
         .modelosChevrolet
         {
-
+            font-size: 20px;
         }
     }
     // Footer
