@@ -412,7 +412,8 @@ nav .nav-item .dropdown-menu {
     width: 80%;
   }
   .bodyChevrolet .mainChevrolet .modelosChevrolet, .bodyChevrolet .mainChevrolet .modelosFord, .bodyChevrolet .mainFord .modelosChevrolet, .bodyChevrolet .mainFord .modelosFord, .bodyFord .mainChevrolet .modelosChevrolet, .bodyFord .mainChevrolet .modelosFord, .bodyFord .mainFord .modelosChevrolet, .bodyFord .mainFord .modelosFord {
-    font-size: 50px;
+    font-size: 20px;
+    padding: 20px;
   }
   .bodyChevrolet .mainChevrolet .article-modelos .row, .bodyChevrolet .mainFord .article-modelos .row, .bodyFord .mainChevrolet .article-modelos .row, .bodyFord .mainFord .article-modelos .row {
     display: flex;
@@ -479,10 +480,6 @@ nav .nav-item .dropdown-menu {
   .main-financiamiento .section-financiamiento .container-fluid .row .col .texto {
     margin: 0;
     margin: 10px 0 10px;
-  }
-  .mainChevrolet .modelosChevrolet {
-    font-size: 20px;
-    padding: 20px;
   }
   .footerDiv .footerFooter {
     display: flex;

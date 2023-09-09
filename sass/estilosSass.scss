@@ -479,14 +479,15 @@ nav
             width: 80%;
         }
     }
-    // Chevrolet
+    // Chevrolet, Ford
     .bodyChevrolet, .bodyFord
     {
         .mainChevrolet, .mainFord
         {
             .modelosChevrolet, .modelosFord
             {
-                font-size: 50px;
+                font-size: 20px;
+                padding: 20px;
             }
             .article-modelos
             {
@@ -598,15 +599,6 @@ nav
                 }
             }   
             
-        }
-    }
-    // Modelos Chevrolet
-    .mainChevrolet
-    {
-        .modelosChevrolet
-        {
-            font-size: 20px;
-            padding: 20px;
         }
     }
     // Footer
