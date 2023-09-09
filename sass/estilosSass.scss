@@ -81,8 +81,8 @@ nav
     }
     .main-contacto
     { 
-    .contactanos
-            {
+        .contactanos
+        {
             background-image: url(https://www.encontracarros.com.br/upload/volkswagen/novo-polo-2023-02.jpg);
             background-repeat: no-repeat;
             background-size: 100% 500px ;
@@ -90,7 +90,7 @@ nav
             font-size: 60px;
             padding-left: 20px;
             font-weight: bold;
-            }
+        }
         .articleContactos
         {
             display: flex;
@@ -348,50 +348,50 @@ nav
     .mainChevrolet, .mainFord
     {
         .modelosChevrolet
-            {
-                @include variables.TituloAuto;
-                animation-name: TituloChevrolet;
-                animation-duration: 2s;
-                animation-iteration-count: infinite;
-                animation-delay: 0s;
-                @keyframes TituloChevrolet{
-                    0%{
-                        color: #FFD449;
-                    }
-                    25%{
-                        color: white;
-                    }
-                    50%{
-                        color: white;
-                    }
-                    100%{
-                        color: #FFD449;
-                    }
+        {
+            @include variables.TituloAuto;
+            animation-name: TituloChevrolet;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-delay: 0s;
+            @keyframes TituloChevrolet{
+                0%{
+                    color: #FFD449;
+                }
+                25%{
+                    color: white;
+                }
+                50%{
+                    color: white;
+                }
+                100%{
+                    color: #FFD449;
                 }
             }
+        }
         .modelosFord
-            {
-                @include variables.TituloAuto;
-                text-shadow: 0 0 30px white;
-                animation-name: TituloFord;
-                animation-duration: 2s;
-                animation-iteration-count: infinite;
-                animation-delay: 0s;
-                @keyframes TituloFord{
-                    0%{
-                        color: blue;
-                    }
-                    25%{
-                        color: white;
-                    }
-                    50%{
-                        color: white;
-                    }
-                    100%{
-                        color: blue;
-                    }
+        {
+            @include variables.TituloAuto;
+            text-shadow: 0 0 30px white;
+            animation-name: TituloFord;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-delay: 0s;
+            @keyframes TituloFord{
+                0%{
+                    color: blue;
+                }
+                25%{
+                    color: white;
+                }
+                50%{
+                    color: white;
+                }
+                100%{
+                    color: blue;
                 }
             }
+        }
         .article-modelos
         {
             .row

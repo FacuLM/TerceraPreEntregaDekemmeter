@@ -293,6 +293,7 @@ nav .nav-item .dropdown-menu {
   margin: 0;
 }
 .bodyChevrolet .mainChevrolet .modelosChevrolet, .bodyChevrolet .mainFord .modelosChevrolet, .bodyFord .mainChevrolet .modelosChevrolet, .bodyFord .mainFord .modelosChevrolet {
+  padding: 16px;
   text-align: center;
   font-family: "Bebas Neue";
   font-size: 5rem;
@@ -318,6 +319,7 @@ nav .nav-item .dropdown-menu {
   }
 }
 .bodyChevrolet .mainChevrolet .modelosFord, .bodyChevrolet .mainFord .modelosFord, .bodyFord .mainChevrolet .modelosFord, .bodyFord .mainFord .modelosFord {
+  padding: 16px;
   text-align: center;
   font-family: "Bebas Neue";
   font-size: 5rem;
