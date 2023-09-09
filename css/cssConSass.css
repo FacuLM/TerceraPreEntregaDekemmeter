@@ -43,7 +43,7 @@ nav .nav-item .dropdown-menu {
 }
 .bodyIndex .divH1 .titulo {
   font-family: "Roboto", sans-serif;
-  font-size: 25px;
+  font-size: 30px;
   font-weight: bold;
   color: black;
   padding: 0.3rem;
@@ -285,16 +285,15 @@ nav .nav-item .dropdown-menu {
   background-image: linear-gradient(110deg, #9100de 0%, #FC00FF 100%);
 }
 
-.bodyChevrolet .bodyP {
+.bodyChevrolet .bodyP, .bodyFord .bodyP {
   font-family: "Oswald", sans-serif;
   text-align: center;
   background-color: rgb(52, 0, 104);
   color: white;
   margin: 0;
 }
-.bodyChevrolet .mainChevrolet .modelosChevrolet {
+.bodyChevrolet .mainChevrolet .modelosChevrolet, .bodyChevrolet .mainChevrolet .modelosFord, .bodyChevrolet .mainFord .modelosChevrolet, .bodyChevrolet .mainFord .modelosFord, .bodyFord .mainChevrolet .modelosChevrolet, .bodyFord .mainChevrolet .modelosFord, .bodyFord .mainFord .modelosChevrolet, .bodyFord .mainFord .modelosFord {
   text-align: center;
-  color: #FFD449;
   font-family: "Bebas Neue";
   font-size: 5rem;
   text-shadow: 0 0 30px #FFC43D;
@@ -318,26 +317,26 @@ nav .nav-item .dropdown-menu {
     color: #FFD449;
   }
 }
-.bodyChevrolet .mainChevrolet .article-modelos .row {
+.bodyChevrolet .mainChevrolet .article-modelos .row, .bodyChevrolet .mainFord .article-modelos .row, .bodyFord .mainChevrolet .article-modelos .row, .bodyFord .mainFord .article-modelos .row {
   height: 100%;
   width: 100%;
   justify-content: center;
   margin: 0;
   padding: 0;
 }
-.bodyChevrolet .mainChevrolet .article-modelos .row .col-6 {
+.bodyChevrolet .mainChevrolet .article-modelos .row .col-6, .bodyChevrolet .mainFord .article-modelos .row .col-6, .bodyFord .mainChevrolet .article-modelos .row .col-6, .bodyFord .mainFord .article-modelos .row .col-6 {
   width: 40%;
   margin: 5px 10px;
   padding: 0;
 }
-.bodyChevrolet .mainChevrolet .article-modelos .row .tx {
+.bodyChevrolet .mainChevrolet .article-modelos .row .tx, .bodyChevrolet .mainFord .article-modelos .row .tx, .bodyFord .mainChevrolet .article-modelos .row .tx, .bodyFord .mainFord .article-modelos .row .tx {
   padding: 0;
   margin: 5px;
   border: 1px;
   border-radius: 8px;
   box-shadow: 0 10px 25px rgba(92, 99, 105, 0.2);
 }
-.bodyChevrolet .mainChevrolet .article-modelos .row .tx .divTx .input-boton-autos {
+.bodyChevrolet .mainChevrolet .article-modelos .row .tx .divTx .input-boton-autos, .bodyChevrolet .mainFord .article-modelos .row .tx .divTx .input-boton-autos, .bodyFord .mainChevrolet .article-modelos .row .tx .divTx .input-boton-autos, .bodyFord .mainFord .article-modelos .row .tx .divTx .input-boton-autos {
   width: 25%;
   padding: 10px 5px;
   border: none;
@@ -346,7 +345,7 @@ nav .nav-item .dropdown-menu {
   border-radius: 6px;
   font-size: 16px;
 }
-.bodyChevrolet .mainChevrolet .article-modelos .row .tx .divTx .input-boton-autos:hover {
+.bodyChevrolet .mainChevrolet .article-modelos .row .tx .divTx .input-boton-autos:hover, .bodyChevrolet .mainFord .article-modelos .row .tx .divTx .input-boton-autos:hover, .bodyFord .mainChevrolet .article-modelos .row .tx .divTx .input-boton-autos:hover, .bodyFord .mainFord .article-modelos .row .tx .divTx .input-boton-autos:hover {
   background-color: #9100de;
   background-image: linear-gradient(110deg, #9100de 0%, #FC00FF 100%);
 }

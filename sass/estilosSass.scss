@@ -54,7 +54,7 @@ nav
         .titulo
         {
             font-family: variables.$fuenteParrafos;
-            font-size: 25px;
+            font-size: 30px;
             font-weight: bold;
             color: black;
             padding: 0.3rem;
@@ -338,19 +338,18 @@ nav
         }
     }
 }
-// Chevrolet
-.bodyChevrolet
+// Chevrolet y Ford
+.bodyChevrolet, .bodyFord
 {
     .bodyP
     {
         @include variables.aceleraTuFuturo;
     }
-    .mainChevrolet
+    .mainChevrolet, .mainFord
     {
-        .modelosChevrolet
+        .modelosChevrolet, .modelosFord
             {
                 text-align: center;
-                color: #FFD449;
                 font-family: 'Bebas Neue';
                 font-size: 5rem;
                 text-shadow: 0 0 30px #FFC43D;
@@ -359,6 +358,8 @@ nav
                 animation-duration: 2s;
                 animation-iteration-count: infinite;
                 animation-delay: 0s;
+            }
+            .modelosFord{
             }
             @keyframes Titulo{
                 0%{
