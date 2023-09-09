@@ -292,18 +292,18 @@ nav .nav-item .dropdown-menu {
   color: white;
   margin: 0;
 }
-.bodyChevrolet .mainChevrolet .modelosChevrolet, .bodyChevrolet .mainChevrolet .modelosFord, .bodyChevrolet .mainFord .modelosChevrolet, .bodyChevrolet .mainFord .modelosFord, .bodyFord .mainChevrolet .modelosChevrolet, .bodyFord .mainChevrolet .modelosFord, .bodyFord .mainFord .modelosChevrolet, .bodyFord .mainFord .modelosFord {
+.bodyChevrolet .mainChevrolet .modelosChevrolet, .bodyChevrolet .mainFord .modelosChevrolet, .bodyFord .mainChevrolet .modelosChevrolet, .bodyFord .mainFord .modelosChevrolet {
   text-align: center;
   font-family: "Bebas Neue";
   font-size: 5rem;
   text-shadow: 0 0 30px #FFC43D;
   background-color: black;
-  animation-name: Titulo;
+  animation-name: TituloChevrolet;
   animation-duration: 2s;
   animation-iteration-count: infinite;
   animation-delay: 0s;
 }
-@keyframes Titulo {
+@keyframes TituloChevrolet {
   0% {
     color: #FFD449;
   }
@@ -315,6 +315,32 @@ nav .nav-item .dropdown-menu {
   }
   100% {
     color: #FFD449;
+  }
+}
+.bodyChevrolet .mainChevrolet .modelosFord, .bodyChevrolet .mainFord .modelosFord, .bodyFord .mainChevrolet .modelosFord, .bodyFord .mainFord .modelosFord {
+  text-align: center;
+  font-family: "Bebas Neue";
+  font-size: 5rem;
+  text-shadow: 0 0 30px #FFC43D;
+  background-color: black;
+  text-shadow: 0 0 30px white;
+  animation-name: TituloFord;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-delay: 0s;
+}
+@keyframes TituloFord {
+  0% {
+    color: blue;
+  }
+  25% {
+    color: white;
+  }
+  50% {
+    color: white;
+  }
+  100% {
+    color: blue;
   }
 }
 .bodyChevrolet .mainChevrolet .article-modelos .row, .bodyChevrolet .mainFord .article-modelos .row, .bodyFord .mainChevrolet .article-modelos .row, .bodyFord .mainFord .article-modelos .row {
@@ -380,29 +406,29 @@ nav .nav-item .dropdown-menu {
 
 @media screen and (min-width: 320px) and (max-width: 500px) {
   .bodyIndex .divH1 .titulo {
-    font-size: 15px;
+    font-size: 20px;
   }
   .bodyIndex .text-center img {
     width: 80%;
   }
-  .bodyChevrolet .mainChevrolet .modelosChevrolet {
+  .bodyChevrolet .mainChevrolet .modelosChevrolet, .bodyChevrolet .mainChevrolet .modelosFord, .bodyChevrolet .mainFord .modelosChevrolet, .bodyChevrolet .mainFord .modelosFord, .bodyFord .mainChevrolet .modelosChevrolet, .bodyFord .mainChevrolet .modelosFord, .bodyFord .mainFord .modelosChevrolet, .bodyFord .mainFord .modelosFord {
     font-size: 50px;
   }
-  .bodyChevrolet .mainChevrolet .article-modelos .row {
+  .bodyChevrolet .mainChevrolet .article-modelos .row, .bodyChevrolet .mainFord .article-modelos .row, .bodyFord .mainChevrolet .article-modelos .row, .bodyFord .mainFord .article-modelos .row {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
   }
-  .bodyChevrolet .mainChevrolet .article-modelos .row .col-6, .bodyChevrolet .mainChevrolet .article-modelos .row .tx {
+  .bodyChevrolet .mainChevrolet .article-modelos .row .col-6, .bodyChevrolet .mainChevrolet .article-modelos .row .tx, .bodyChevrolet .mainFord .article-modelos .row .col-6, .bodyChevrolet .mainFord .article-modelos .row .tx, .bodyFord .mainChevrolet .article-modelos .row .col-6, .bodyFord .mainChevrolet .article-modelos .row .tx, .bodyFord .mainFord .article-modelos .row .col-6, .bodyFord .mainFord .article-modelos .row .tx {
     width: 80%;
     margin: 10px;
   }
-  .bodyChevrolet .mainChevrolet .article-modelos .row .tx .divTx {
+  .bodyChevrolet .mainChevrolet .article-modelos .row .tx .divTx, .bodyChevrolet .mainFord .article-modelos .row .tx .divTx, .bodyFord .mainChevrolet .article-modelos .row .tx .divTx, .bodyFord .mainFord .article-modelos .row .tx .divTx {
     justify-content: space-evenly;
     height: 300px;
   }
-  .bodyChevrolet .mainChevrolet .article-modelos .row .tx .divTx .input-boton-autos {
+  .bodyChevrolet .mainChevrolet .article-modelos .row .tx .divTx .input-boton-autos, .bodyChevrolet .mainFord .article-modelos .row .tx .divTx .input-boton-autos, .bodyFord .mainChevrolet .article-modelos .row .tx .divTx .input-boton-autos, .bodyFord .mainFord .article-modelos .row .tx .divTx .input-boton-autos {
     font-size: 12px;
     width: 50%;
   }
@@ -446,6 +472,13 @@ nav .nav-item .dropdown-menu {
   }
   .main-financiamiento .section-financiamiento .container-fluid {
     padding: 0;
+  }
+  .main-financiamiento .section-financiamiento .container-fluid .row .col {
+    padding: 0;
+  }
+  .main-financiamiento .section-financiamiento .container-fluid .row .col .texto {
+    margin: 0;
+    margin: 10px 0 10px;
   }
   .mainChevrolet .modelosChevrolet {
     font-size: 20px;

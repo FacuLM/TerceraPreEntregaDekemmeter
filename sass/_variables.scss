@@ -34,3 +34,10 @@ $sizeL: 30px;
             background-image: linear-gradient(110deg, #9100de 0%, #FC00FF 100%);
         }
 }
+@mixin TituloAuto{
+    text-align: center;
+    font-family: 'Bebas Neue';
+    font-size: 5rem;
+    text-shadow: 0 0 30px #FFC43D;
+    background-color: black;
+}
