@@ -285,14 +285,14 @@ nav .nav-item .dropdown-menu {
   background-image: linear-gradient(110deg, #9100de 0%, #FC00FF 100%);
 }
 
-.bodyChevrolet .bodyP, .bodyFord .bodyP {
+.bodyChevrolet .bodyP, .bodyFord .bodyP, .bodyPeugeot .bodyP, .bodyVolkswagen .bodyP {
   font-family: "Oswald", sans-serif;
   text-align: center;
   background-color: rgb(52, 0, 104);
   color: white;
   margin: 0;
 }
-.bodyChevrolet .mainChevrolet .modelosChevrolet, .bodyChevrolet .mainFord .modelosChevrolet, .bodyFord .mainChevrolet .modelosChevrolet, .bodyFord .mainFord .modelosChevrolet {
+.bodyChevrolet .mainChevrolet .modelosChevrolet, .bodyChevrolet .mainFord .modelosChevrolet, .bodyChevrolet .mainPeugeot .modelosChevrolet, .bodyChevrolet .mainVolkswagen .modelosChevrolet, .bodyFord .mainChevrolet .modelosChevrolet, .bodyFord .mainFord .modelosChevrolet, .bodyFord .mainPeugeot .modelosChevrolet, .bodyFord .mainVolkswagen .modelosChevrolet, .bodyPeugeot .mainChevrolet .modelosChevrolet, .bodyPeugeot .mainFord .modelosChevrolet, .bodyPeugeot .mainPeugeot .modelosChevrolet, .bodyPeugeot .mainVolkswagen .modelosChevrolet, .bodyVolkswagen .mainChevrolet .modelosChevrolet, .bodyVolkswagen .mainFord .modelosChevrolet, .bodyVolkswagen .mainPeugeot .modelosChevrolet, .bodyVolkswagen .mainVolkswagen .modelosChevrolet {
   padding: 16px;
   text-align: center;
   font-family: "Bebas Neue";
@@ -318,7 +318,7 @@ nav .nav-item .dropdown-menu {
     color: #FFD449;
   }
 }
-.bodyChevrolet .mainChevrolet .modelosFord, .bodyChevrolet .mainFord .modelosFord, .bodyFord .mainChevrolet .modelosFord, .bodyFord .mainFord .modelosFord {
+.bodyChevrolet .mainChevrolet .modelosFord, .bodyChevrolet .mainFord .modelosFord, .bodyChevrolet .mainPeugeot .modelosFord, .bodyChevrolet .mainVolkswagen .modelosFord, .bodyFord .mainChevrolet .modelosFord, .bodyFord .mainFord .modelosFord, .bodyFord .mainPeugeot .modelosFord, .bodyFord .mainVolkswagen .modelosFord, .bodyPeugeot .mainChevrolet .modelosFord, .bodyPeugeot .mainFord .modelosFord, .bodyPeugeot .mainPeugeot .modelosFord, .bodyPeugeot .mainVolkswagen .modelosFord, .bodyVolkswagen .mainChevrolet .modelosFord, .bodyVolkswagen .mainFord .modelosFord, .bodyVolkswagen .mainPeugeot .modelosFord, .bodyVolkswagen .mainVolkswagen .modelosFord {
   padding: 16px;
   text-align: center;
   font-family: "Bebas Neue";
@@ -345,26 +345,80 @@ nav .nav-item .dropdown-menu {
     color: blue;
   }
 }
-.bodyChevrolet .mainChevrolet .article-modelos .row, .bodyChevrolet .mainFord .article-modelos .row, .bodyFord .mainChevrolet .article-modelos .row, .bodyFord .mainFord .article-modelos .row {
+.bodyChevrolet .mainChevrolet .modelosPeugeot, .bodyChevrolet .mainFord .modelosPeugeot, .bodyChevrolet .mainPeugeot .modelosPeugeot, .bodyChevrolet .mainVolkswagen .modelosPeugeot, .bodyFord .mainChevrolet .modelosPeugeot, .bodyFord .mainFord .modelosPeugeot, .bodyFord .mainPeugeot .modelosPeugeot, .bodyFord .mainVolkswagen .modelosPeugeot, .bodyPeugeot .mainChevrolet .modelosPeugeot, .bodyPeugeot .mainFord .modelosPeugeot, .bodyPeugeot .mainPeugeot .modelosPeugeot, .bodyPeugeot .mainVolkswagen .modelosPeugeot, .bodyVolkswagen .mainChevrolet .modelosPeugeot, .bodyVolkswagen .mainFord .modelosPeugeot, .bodyVolkswagen .mainPeugeot .modelosPeugeot, .bodyVolkswagen .mainVolkswagen .modelosPeugeot {
+  padding: 16px;
+  text-align: center;
+  font-family: "Bebas Neue";
+  font-size: 5rem;
+  text-shadow: 0 0 30px #FFC43D;
+  background-color: black;
+  text-shadow: 0 0 30px white;
+  animation-name: TituloPeugeot;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-delay: 0s;
+}
+@keyframes TituloPeugeot {
+  0% {
+    color: #f9f4f5;
+  }
+  25% {
+    color: white;
+  }
+  50% {
+    color: white;
+  }
+  100% {
+    color: #6f686d;
+  }
+}
+.bodyChevrolet .mainChevrolet .modelosVolkswagen, .bodyChevrolet .mainFord .modelosVolkswagen, .bodyChevrolet .mainPeugeot .modelosVolkswagen, .bodyChevrolet .mainVolkswagen .modelosVolkswagen, .bodyFord .mainChevrolet .modelosVolkswagen, .bodyFord .mainFord .modelosVolkswagen, .bodyFord .mainPeugeot .modelosVolkswagen, .bodyFord .mainVolkswagen .modelosVolkswagen, .bodyPeugeot .mainChevrolet .modelosVolkswagen, .bodyPeugeot .mainFord .modelosVolkswagen, .bodyPeugeot .mainPeugeot .modelosVolkswagen, .bodyPeugeot .mainVolkswagen .modelosVolkswagen, .bodyVolkswagen .mainChevrolet .modelosVolkswagen, .bodyVolkswagen .mainFord .modelosVolkswagen, .bodyVolkswagen .mainPeugeot .modelosVolkswagen, .bodyVolkswagen .mainVolkswagen .modelosVolkswagen {
+  padding: 16px;
+  text-align: center;
+  font-family: "Bebas Neue";
+  font-size: 5rem;
+  text-shadow: 0 0 30px #FFC43D;
+  background-color: black;
+  text-shadow: 0 0 30px white;
+  animation-name: TituloVolkswagen;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-delay: 0s;
+}
+@keyframes TituloVolkswagen {
+  0% {
+    color: #C0C5C1;
+  }
+  25% {
+    color: #FFFFFF;
+  }
+  50% {
+    color: #706F6F;
+  }
+  100% {
+    color: #DBDBDB;
+  }
+}
+.bodyChevrolet .mainChevrolet .article-modelos .row, .bodyChevrolet .mainFord .article-modelos .row, .bodyChevrolet .mainPeugeot .article-modelos .row, .bodyChevrolet .mainVolkswagen .article-modelos .row, .bodyFord .mainChevrolet .article-modelos .row, .bodyFord .mainFord .article-modelos .row, .bodyFord .mainPeugeot .article-modelos .row, .bodyFord .mainVolkswagen .article-modelos .row, .bodyPeugeot .mainChevrolet .article-modelos .row, .bodyPeugeot .mainFord .article-modelos .row, .bodyPeugeot .mainPeugeot .article-modelos .row, .bodyPeugeot .mainVolkswagen .article-modelos .row, .bodyVolkswagen .mainChevrolet .article-modelos .row, .bodyVolkswagen .mainFord .article-modelos .row, .bodyVolkswagen .mainPeugeot .article-modelos .row, .bodyVolkswagen .mainVolkswagen .article-modelos .row {
   height: 100%;
   width: 100%;
   justify-content: center;
   margin: 0;
   padding: 0;
 }
-.bodyChevrolet .mainChevrolet .article-modelos .row .col-6, .bodyChevrolet .mainFord .article-modelos .row .col-6, .bodyFord .mainChevrolet .article-modelos .row .col-6, .bodyFord .mainFord .article-modelos .row .col-6 {
+.bodyChevrolet .mainChevrolet .article-modelos .row .col-6, .bodyChevrolet .mainFord .article-modelos .row .col-6, .bodyChevrolet .mainPeugeot .article-modelos .row .col-6, .bodyChevrolet .mainVolkswagen .article-modelos .row .col-6, .bodyFord .mainChevrolet .article-modelos .row .col-6, .bodyFord .mainFord .article-modelos .row .col-6, .bodyFord .mainPeugeot .article-modelos .row .col-6, .bodyFord .mainVolkswagen .article-modelos .row .col-6, .bodyPeugeot .mainChevrolet .article-modelos .row .col-6, .bodyPeugeot .mainFord .article-modelos .row .col-6, .bodyPeugeot .mainPeugeot .article-modelos .row .col-6, .bodyPeugeot .mainVolkswagen .article-modelos .row .col-6, .bodyVolkswagen .mainChevrolet .article-modelos .row .col-6, .bodyVolkswagen .mainFord .article-modelos .row .col-6, .bodyVolkswagen .mainPeugeot .article-modelos .row .col-6, .bodyVolkswagen .mainVolkswagen .article-modelos .row .col-6 {
   width: 40%;
   margin: 5px 10px;
   padding: 0;
 }
-.bodyChevrolet .mainChevrolet .article-modelos .row .tx, .bodyChevrolet .mainFord .article-modelos .row .tx, .bodyFord .mainChevrolet .article-modelos .row .tx, .bodyFord .mainFord .article-modelos .row .tx {
+.bodyChevrolet .mainChevrolet .article-modelos .row .tx, .bodyChevrolet .mainFord .article-modelos .row .tx, .bodyChevrolet .mainPeugeot .article-modelos .row .tx, .bodyChevrolet .mainVolkswagen .article-modelos .row .tx, .bodyFord .mainChevrolet .article-modelos .row .tx, .bodyFord .mainFord .article-modelos .row .tx, .bodyFord .mainPeugeot .article-modelos .row .tx, .bodyFord .mainVolkswagen .article-modelos .row .tx, .bodyPeugeot .mainChevrolet .article-modelos .row .tx, .bodyPeugeot .mainFord .article-modelos .row .tx, .bodyPeugeot .mainPeugeot .article-modelos .row .tx, .bodyPeugeot .mainVolkswagen .article-modelos .row .tx, .bodyVolkswagen .mainChevrolet .article-modelos .row .tx, .bodyVolkswagen .mainFord .article-modelos .row .tx, .bodyVolkswagen .mainPeugeot .article-modelos .row .tx, .bodyVolkswagen .mainVolkswagen .article-modelos .row .tx {
   padding: 0;
   margin: 5px;
   border: 1px;
   border-radius: 8px;
   box-shadow: 0 10px 25px rgba(92, 99, 105, 0.2);
 }
-.bodyChevrolet .mainChevrolet .article-modelos .row .tx .divTx .input-boton-autos, .bodyChevrolet .mainFord .article-modelos .row .tx .divTx .input-boton-autos, .bodyFord .mainChevrolet .article-modelos .row .tx .divTx .input-boton-autos, .bodyFord .mainFord .article-modelos .row .tx .divTx .input-boton-autos {
+.bodyChevrolet .mainChevrolet .article-modelos .row .tx .divTx .input-boton-autos, .bodyChevrolet .mainFord .article-modelos .row .tx .divTx .input-boton-autos, .bodyChevrolet .mainPeugeot .article-modelos .row .tx .divTx .input-boton-autos, .bodyChevrolet .mainVolkswagen .article-modelos .row .tx .divTx .input-boton-autos, .bodyFord .mainChevrolet .article-modelos .row .tx .divTx .input-boton-autos, .bodyFord .mainFord .article-modelos .row .tx .divTx .input-boton-autos, .bodyFord .mainPeugeot .article-modelos .row .tx .divTx .input-boton-autos, .bodyFord .mainVolkswagen .article-modelos .row .tx .divTx .input-boton-autos, .bodyPeugeot .mainChevrolet .article-modelos .row .tx .divTx .input-boton-autos, .bodyPeugeot .mainFord .article-modelos .row .tx .divTx .input-boton-autos, .bodyPeugeot .mainPeugeot .article-modelos .row .tx .divTx .input-boton-autos, .bodyPeugeot .mainVolkswagen .article-modelos .row .tx .divTx .input-boton-autos, .bodyVolkswagen .mainChevrolet .article-modelos .row .tx .divTx .input-boton-autos, .bodyVolkswagen .mainFord .article-modelos .row .tx .divTx .input-boton-autos, .bodyVolkswagen .mainPeugeot .article-modelos .row .tx .divTx .input-boton-autos, .bodyVolkswagen .mainVolkswagen .article-modelos .row .tx .divTx .input-boton-autos {
   width: 25%;
   padding: 10px 5px;
   border: none;
@@ -373,7 +427,7 @@ nav .nav-item .dropdown-menu {
   border-radius: 6px;
   font-size: 16px;
 }
-.bodyChevrolet .mainChevrolet .article-modelos .row .tx .divTx .input-boton-autos:hover, .bodyChevrolet .mainFord .article-modelos .row .tx .divTx .input-boton-autos:hover, .bodyFord .mainChevrolet .article-modelos .row .tx .divTx .input-boton-autos:hover, .bodyFord .mainFord .article-modelos .row .tx .divTx .input-boton-autos:hover {
+.bodyChevrolet .mainChevrolet .article-modelos .row .tx .divTx .input-boton-autos:hover, .bodyChevrolet .mainFord .article-modelos .row .tx .divTx .input-boton-autos:hover, .bodyChevrolet .mainPeugeot .article-modelos .row .tx .divTx .input-boton-autos:hover, .bodyChevrolet .mainVolkswagen .article-modelos .row .tx .divTx .input-boton-autos:hover, .bodyFord .mainChevrolet .article-modelos .row .tx .divTx .input-boton-autos:hover, .bodyFord .mainFord .article-modelos .row .tx .divTx .input-boton-autos:hover, .bodyFord .mainPeugeot .article-modelos .row .tx .divTx .input-boton-autos:hover, .bodyFord .mainVolkswagen .article-modelos .row .tx .divTx .input-boton-autos:hover, .bodyPeugeot .mainChevrolet .article-modelos .row .tx .divTx .input-boton-autos:hover, .bodyPeugeot .mainFord .article-modelos .row .tx .divTx .input-boton-autos:hover, .bodyPeugeot .mainPeugeot .article-modelos .row .tx .divTx .input-boton-autos:hover, .bodyPeugeot .mainVolkswagen .article-modelos .row .tx .divTx .input-boton-autos:hover, .bodyVolkswagen .mainChevrolet .article-modelos .row .tx .divTx .input-boton-autos:hover, .bodyVolkswagen .mainFord .article-modelos .row .tx .divTx .input-boton-autos:hover, .bodyVolkswagen .mainPeugeot .article-modelos .row .tx .divTx .input-boton-autos:hover, .bodyVolkswagen .mainVolkswagen .article-modelos .row .tx .divTx .input-boton-autos:hover {
   background-color: #9100de;
   background-image: linear-gradient(110deg, #9100de 0%, #FC00FF 100%);
 }
@@ -406,32 +460,32 @@ nav .nav-item .dropdown-menu {
   text-align: center;
 }
 
-@media screen and (min-width: 320px) and (max-width: 500px) {
+@media screen and (max-width: 500px) {
   .bodyIndex .divH1 .titulo {
     font-size: 20px;
   }
   .bodyIndex .text-center img {
     width: 80%;
   }
-  .bodyChevrolet .mainChevrolet .modelosChevrolet, .bodyChevrolet .mainChevrolet .modelosFord, .bodyChevrolet .mainFord .modelosChevrolet, .bodyChevrolet .mainFord .modelosFord, .bodyFord .mainChevrolet .modelosChevrolet, .bodyFord .mainChevrolet .modelosFord, .bodyFord .mainFord .modelosChevrolet, .bodyFord .mainFord .modelosFord {
+  .bodyChevrolet .mainChevrolet .modelosChevrolet, .bodyChevrolet .mainChevrolet .modelosFord, .bodyChevrolet .mainChevrolet .modelosPeugeot, .bodyChevrolet .mainChevrolet .modelosVolkswagen, .bodyChevrolet .mainFord .modelosChevrolet, .bodyChevrolet .mainFord .modelosFord, .bodyChevrolet .mainFord .modelosPeugeot, .bodyChevrolet .mainFord .modelosVolkswagen, .bodyChevrolet .mainPeugeot .modelosChevrolet, .bodyChevrolet .mainPeugeot .modelosFord, .bodyChevrolet .mainPeugeot .modelosPeugeot, .bodyChevrolet .mainPeugeot .modelosVolkswagen, .bodyChevrolet .mainVolkswagen .modelosChevrolet, .bodyChevrolet .mainVolkswagen .modelosFord, .bodyChevrolet .mainVolkswagen .modelosPeugeot, .bodyChevrolet .mainVolkswagen .modelosVolkswagen, .bodyFord .mainChevrolet .modelosChevrolet, .bodyFord .mainChevrolet .modelosFord, .bodyFord .mainChevrolet .modelosPeugeot, .bodyFord .mainChevrolet .modelosVolkswagen, .bodyFord .mainFord .modelosChevrolet, .bodyFord .mainFord .modelosFord, .bodyFord .mainFord .modelosPeugeot, .bodyFord .mainFord .modelosVolkswagen, .bodyFord .mainPeugeot .modelosChevrolet, .bodyFord .mainPeugeot .modelosFord, .bodyFord .mainPeugeot .modelosPeugeot, .bodyFord .mainPeugeot .modelosVolkswagen, .bodyFord .mainVolkswagen .modelosChevrolet, .bodyFord .mainVolkswagen .modelosFord, .bodyFord .mainVolkswagen .modelosPeugeot, .bodyFord .mainVolkswagen .modelosVolkswagen, .bodyPeugeot .mainChevrolet .modelosChevrolet, .bodyPeugeot .mainChevrolet .modelosFord, .bodyPeugeot .mainChevrolet .modelosPeugeot, .bodyPeugeot .mainChevrolet .modelosVolkswagen, .bodyPeugeot .mainFord .modelosChevrolet, .bodyPeugeot .mainFord .modelosFord, .bodyPeugeot .mainFord .modelosPeugeot, .bodyPeugeot .mainFord .modelosVolkswagen, .bodyPeugeot .mainPeugeot .modelosChevrolet, .bodyPeugeot .mainPeugeot .modelosFord, .bodyPeugeot .mainPeugeot .modelosPeugeot, .bodyPeugeot .mainPeugeot .modelosVolkswagen, .bodyPeugeot .mainVolkswagen .modelosChevrolet, .bodyPeugeot .mainVolkswagen .modelosFord, .bodyPeugeot .mainVolkswagen .modelosPeugeot, .bodyPeugeot .mainVolkswagen .modelosVolkswagen, .bodyVolkswagen .mainChevrolet .modelosChevrolet, .bodyVolkswagen .mainChevrolet .modelosFord, .bodyVolkswagen .mainChevrolet .modelosPeugeot, .bodyVolkswagen .mainChevrolet .modelosVolkswagen, .bodyVolkswagen .mainFord .modelosChevrolet, .bodyVolkswagen .mainFord .modelosFord, .bodyVolkswagen .mainFord .modelosPeugeot, .bodyVolkswagen .mainFord .modelosVolkswagen, .bodyVolkswagen .mainPeugeot .modelosChevrolet, .bodyVolkswagen .mainPeugeot .modelosFord, .bodyVolkswagen .mainPeugeot .modelosPeugeot, .bodyVolkswagen .mainPeugeot .modelosVolkswagen, .bodyVolkswagen .mainVolkswagen .modelosChevrolet, .bodyVolkswagen .mainVolkswagen .modelosFord, .bodyVolkswagen .mainVolkswagen .modelosPeugeot, .bodyVolkswagen .mainVolkswagen .modelosVolkswagen {
     font-size: 50px;
     padding: 20px;
   }
-  .bodyChevrolet .mainChevrolet .article-modelos .row, .bodyChevrolet .mainFord .article-modelos .row, .bodyFord .mainChevrolet .article-modelos .row, .bodyFord .mainFord .article-modelos .row {
+  .bodyChevrolet .mainChevrolet .article-modelos .row, .bodyChevrolet .mainFord .article-modelos .row, .bodyChevrolet .mainPeugeot .article-modelos .row, .bodyChevrolet .mainVolkswagen .article-modelos .row, .bodyFord .mainChevrolet .article-modelos .row, .bodyFord .mainFord .article-modelos .row, .bodyFord .mainPeugeot .article-modelos .row, .bodyFord .mainVolkswagen .article-modelos .row, .bodyPeugeot .mainChevrolet .article-modelos .row, .bodyPeugeot .mainFord .article-modelos .row, .bodyPeugeot .mainPeugeot .article-modelos .row, .bodyPeugeot .mainVolkswagen .article-modelos .row, .bodyVolkswagen .mainChevrolet .article-modelos .row, .bodyVolkswagen .mainFord .article-modelos .row, .bodyVolkswagen .mainPeugeot .article-modelos .row, .bodyVolkswagen .mainVolkswagen .article-modelos .row {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
   }
-  .bodyChevrolet .mainChevrolet .article-modelos .row .col-6, .bodyChevrolet .mainChevrolet .article-modelos .row .tx, .bodyChevrolet .mainFord .article-modelos .row .col-6, .bodyChevrolet .mainFord .article-modelos .row .tx, .bodyFord .mainChevrolet .article-modelos .row .col-6, .bodyFord .mainChevrolet .article-modelos .row .tx, .bodyFord .mainFord .article-modelos .row .col-6, .bodyFord .mainFord .article-modelos .row .tx {
+  .bodyChevrolet .mainChevrolet .article-modelos .row .col-6, .bodyChevrolet .mainChevrolet .article-modelos .row .tx, .bodyChevrolet .mainFord .article-modelos .row .col-6, .bodyChevrolet .mainFord .article-modelos .row .tx, .bodyChevrolet .mainPeugeot .article-modelos .row .col-6, .bodyChevrolet .mainPeugeot .article-modelos .row .tx, .bodyChevrolet .mainVolkswagen .article-modelos .row .col-6, .bodyChevrolet .mainVolkswagen .article-modelos .row .tx, .bodyFord .mainChevrolet .article-modelos .row .col-6, .bodyFord .mainChevrolet .article-modelos .row .tx, .bodyFord .mainFord .article-modelos .row .col-6, .bodyFord .mainFord .article-modelos .row .tx, .bodyFord .mainPeugeot .article-modelos .row .col-6, .bodyFord .mainPeugeot .article-modelos .row .tx, .bodyFord .mainVolkswagen .article-modelos .row .col-6, .bodyFord .mainVolkswagen .article-modelos .row .tx, .bodyPeugeot .mainChevrolet .article-modelos .row .col-6, .bodyPeugeot .mainChevrolet .article-modelos .row .tx, .bodyPeugeot .mainFord .article-modelos .row .col-6, .bodyPeugeot .mainFord .article-modelos .row .tx, .bodyPeugeot .mainPeugeot .article-modelos .row .col-6, .bodyPeugeot .mainPeugeot .article-modelos .row .tx, .bodyPeugeot .mainVolkswagen .article-modelos .row .col-6, .bodyPeugeot .mainVolkswagen .article-modelos .row .tx, .bodyVolkswagen .mainChevrolet .article-modelos .row .col-6, .bodyVolkswagen .mainChevrolet .article-modelos .row .tx, .bodyVolkswagen .mainFord .article-modelos .row .col-6, .bodyVolkswagen .mainFord .article-modelos .row .tx, .bodyVolkswagen .mainPeugeot .article-modelos .row .col-6, .bodyVolkswagen .mainPeugeot .article-modelos .row .tx, .bodyVolkswagen .mainVolkswagen .article-modelos .row .col-6, .bodyVolkswagen .mainVolkswagen .article-modelos .row .tx {
     width: 80%;
     margin: 10px;
   }
-  .bodyChevrolet .mainChevrolet .article-modelos .row .tx .divTx, .bodyChevrolet .mainFord .article-modelos .row .tx .divTx, .bodyFord .mainChevrolet .article-modelos .row .tx .divTx, .bodyFord .mainFord .article-modelos .row .tx .divTx {
+  .bodyChevrolet .mainChevrolet .article-modelos .row .tx .divTx, .bodyChevrolet .mainFord .article-modelos .row .tx .divTx, .bodyChevrolet .mainPeugeot .article-modelos .row .tx .divTx, .bodyChevrolet .mainVolkswagen .article-modelos .row .tx .divTx, .bodyFord .mainChevrolet .article-modelos .row .tx .divTx, .bodyFord .mainFord .article-modelos .row .tx .divTx, .bodyFord .mainPeugeot .article-modelos .row .tx .divTx, .bodyFord .mainVolkswagen .article-modelos .row .tx .divTx, .bodyPeugeot .mainChevrolet .article-modelos .row .tx .divTx, .bodyPeugeot .mainFord .article-modelos .row .tx .divTx, .bodyPeugeot .mainPeugeot .article-modelos .row .tx .divTx, .bodyPeugeot .mainVolkswagen .article-modelos .row .tx .divTx, .bodyVolkswagen .mainChevrolet .article-modelos .row .tx .divTx, .bodyVolkswagen .mainFord .article-modelos .row .tx .divTx, .bodyVolkswagen .mainPeugeot .article-modelos .row .tx .divTx, .bodyVolkswagen .mainVolkswagen .article-modelos .row .tx .divTx {
     justify-content: space-evenly;
     height: 300px;
   }
-  .bodyChevrolet .mainChevrolet .article-modelos .row .tx .divTx .input-boton-autos, .bodyChevrolet .mainFord .article-modelos .row .tx .divTx .input-boton-autos, .bodyFord .mainChevrolet .article-modelos .row .tx .divTx .input-boton-autos, .bodyFord .mainFord .article-modelos .row .tx .divTx .input-boton-autos {
+  .bodyChevrolet .mainChevrolet .article-modelos .row .tx .divTx .input-boton-autos, .bodyChevrolet .mainFord .article-modelos .row .tx .divTx .input-boton-autos, .bodyChevrolet .mainPeugeot .article-modelos .row .tx .divTx .input-boton-autos, .bodyChevrolet .mainVolkswagen .article-modelos .row .tx .divTx .input-boton-autos, .bodyFord .mainChevrolet .article-modelos .row .tx .divTx .input-boton-autos, .bodyFord .mainFord .article-modelos .row .tx .divTx .input-boton-autos, .bodyFord .mainPeugeot .article-modelos .row .tx .divTx .input-boton-autos, .bodyFord .mainVolkswagen .article-modelos .row .tx .divTx .input-boton-autos, .bodyPeugeot .mainChevrolet .article-modelos .row .tx .divTx .input-boton-autos, .bodyPeugeot .mainFord .article-modelos .row .tx .divTx .input-boton-autos, .bodyPeugeot .mainPeugeot .article-modelos .row .tx .divTx .input-boton-autos, .bodyPeugeot .mainVolkswagen .article-modelos .row .tx .divTx .input-boton-autos, .bodyVolkswagen .mainChevrolet .article-modelos .row .tx .divTx .input-boton-autos, .bodyVolkswagen .mainFord .article-modelos .row .tx .divTx .input-boton-autos, .bodyVolkswagen .mainPeugeot .article-modelos .row .tx .divTx .input-boton-autos, .bodyVolkswagen .mainVolkswagen .article-modelos .row .tx .divTx .input-boton-autos {
     font-size: 12px;
     width: 50%;
   }
@@ -452,7 +506,6 @@ nav .nav-item .dropdown-menu {
   }
   .main-financiamiento .article-financiamiento .auto .autoDivH2 .TextoFinanciamiento {
     font-size: 20px;
-    width: 100%;
     margin: 0;
     padding: 0;
   }
@@ -467,19 +520,17 @@ nav .nav-item .dropdown-menu {
     font-weight: none;
   }
   .main-financiamiento .section-financiamiento .parrafoF {
-    font-size: 15px;
+    font-size: 20px;
     text-align: center;
   }
   .main-financiamiento .section-financiamiento #divBotonConsulta .boton-consulta {
     width: 50%;
   }
-  .main-financiamiento .section-financiamiento .container-fluid {
+  .main-financiamiento .section-financiamiento .row {
+    margin: 0;
     padding: 0;
   }
-  .main-financiamiento .section-financiamiento .container-fluid .row .col {
-    padding: 0;
-  }
-  .main-financiamiento .section-financiamiento .container-fluid .row .col .texto {
+  .main-financiamiento .section-financiamiento .row .col .texto {
     margin: 0;
     margin: 10px 0 10px;
   }
