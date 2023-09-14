@@ -339,13 +339,13 @@ nav
     }
 }
 // Chevrolet y Ford
-.bodyChevrolet, .bodyFord
+.bodyChevrolet, .bodyFord, .bodyPeugeot, .bodyVolkswagen
 {
-    .bodyP
+    .bodyP 
     {
         @include variables.aceleraTuFuturo;
     }
-    .mainChevrolet, .mainFord
+    .mainChevrolet, .mainFord, .mainPeugeot, .mainVolkswagen
     {
         .modelosChevrolet
         {
@@ -389,6 +389,52 @@ nav
                 }
                 100%{
                     color: blue;
+                }
+            }
+        }
+        .modelosPeugeot
+        {
+            @include variables.TituloAuto;
+            text-shadow: 0 0 30px white;
+            animation-name: TituloPeugeot;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-delay: 0s;
+            @keyframes TituloPeugeot{
+                0%{
+                    color: #f9f4f5 ;
+                }
+                25%{
+                    color: white;
+                }
+                50%{
+                    color: white ;
+                }
+                100%{
+                    color:#6f686d ;
+                }
+            }
+        }
+        .modelosVolkswagen
+        {
+            @include variables.TituloAuto;
+            text-shadow: 0 0 30px white;
+            animation-name: TituloVolkswagen;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-delay: 0s;
+            @keyframes TituloVolkswagen{
+                0%{
+                    color: #C0C5C1 ;
+                }
+                25%{
+                    color: #FFFFFF;
+                }
+                50%{
+                    color: #706F6F ;
+                }
+                100%{
+                    color:#DBDBDB ;
                 }
             }
         }
@@ -462,7 +508,7 @@ nav
         text-align: center;
     }
 }
-@media screen and (min-width: 320px) and (max-width:500px ) 
+@media screen and (max-width:500px ) 
 {
     // Index
     .bodyIndex
@@ -480,11 +526,11 @@ nav
         }
     }
     // Chevrolet, Ford
-    .bodyChevrolet, .bodyFord
+    .bodyChevrolet, .bodyFord, .bodyPeugeot, .bodyVolkswagen
     {
-        .mainChevrolet, .mainFord
+        .mainChevrolet, .mainFord, .mainPeugeot, .mainVolkswagen
         {
-            .modelosChevrolet, .modelosFord
+            .modelosChevrolet, .modelosFord, .modelosPeugeot, .modelosVolkswagen
             {
                 font-size: 50px;
                 padding: 20px;
@@ -549,7 +595,6 @@ nav
                     .TextoFinanciamiento
                     {
                         font-size: 20px;
-                        width: 100%;
                         margin: 0;
                         padding: 0;
                     }
@@ -572,7 +617,7 @@ nav
         {
             .parrafoF
             {
-                font-size: 15px;
+                font-size: 20px;
                 text-align: center;
             }
             #divBotonConsulta
@@ -582,23 +627,20 @@ nav
                     width: 50%;
                 }
             }
-            .container-fluid
+            .row
             {
+                margin:0;
                 padding: 0;
-                .row
+                .col
                 {
-                    .col
-                    {
-                        padding: 0;
-                        .texto
-                        {   
-                            margin: 0;
-                            margin: 10px 0 10px;
-                        }
+                    
+                    .texto
+                    {   
+                        margin: 0;
+                        margin: 10px 0 10px;
                     }
                 }
-            }   
-            
+            }
         }
     }
     // Footer
