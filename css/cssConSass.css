@@ -69,10 +69,10 @@ nav .nav-item .dropdown-menu {
   margin: 0;
 }
 .bodyContactos .main-contacto .contactanos {
-  background-image: url(https://www.encontracarros.com.br/upload/volkswagen/novo-polo-2023-02.jpg);
+  background-image: url(https://auto.ironhorse.ru/wp-content/uploads/2017/06/polo-6.jpg);
   background-repeat: no-repeat;
-  background-size: 100% 500px;
-  height: 500px;
+  background-size: 100% 100%;
+  height: 700px;
   font-size: 60px;
   padding-left: 20px;
   font-weight: bold;
@@ -197,11 +197,10 @@ nav .nav-item .dropdown-menu {
   font-family: "Oswald", sans-serif;
 }
 .bodyFinanciamiento .article-financiamiento .articleFinanciamientoDiv {
-  background-image: url("https://markepymes.com/wp-content/uploads/2021/04/tips-de-marketing-para-el-sector-del-alquiler-de-vehiculos-y-furgonetas.jpg");
+  background-image: url("https://www.telemundo.com/sites/nbcutelemundo/files/styles/article_cover_image/public/images/gallery/2018/03/27/manejando-autopista-12.jpg?itok=_mdm1D1i");
   background-repeat: no-repeat;
-  background-size: 100% 400px;
+  background-size: 100% 100%;
   height: 400px;
-  width: 100%;
 }
 .bodyFinanciamiento .article-financiamiento .auto {
   font-family: "Roboto", sans-serif;
